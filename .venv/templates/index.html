@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELBAR API</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/favicon.ico')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+</head>
+<body>
+    <div class="logo" id="logo">
+        <img src="{{url_for('static', filename='img/logo.png')}}" alt=""></img>
+    </div>
+    <div class="map" id="map">
+        <iframe src="{{url_for('mapview')}}" title="map"></iframe>
+    </div>
+    <div class="footer">
+        <ul class="data-items">
+            <li><a href='/data'>API DATA (JSON)</a></li>
+            <li><a href='/pydata'>API DATA (PYTHON)</a></li>
+        </ul>
+        <ul class="copyright">
+            <li><a href='/'>travelbar 2023 &copy</a></li>
+        </ul>
+    </div>
+</body>
+</html>
