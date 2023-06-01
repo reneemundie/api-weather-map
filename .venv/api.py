@@ -25,7 +25,7 @@ weather_data = []
 part = 'minutely,hourly,daily,alert'
 
 # Function to access API key stored separately for security
-load_dotenv(dotenv_path="/Users/reneemundie/PythonProjects/API_A1/.venv/key.env")
+load_dotenv(dotenv_path="/Users/reneemundie/PythonProjects/api-weather-map/.venv/key.env")
 api_key = os.getenv('API_KEY')
 
 # Function to update API URL & make API request
